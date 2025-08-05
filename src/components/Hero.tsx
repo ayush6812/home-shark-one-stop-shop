@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
-            HOME <span className="text-wave drop-shadow-2xl">SHARK</span>
+            <span className="text-shark">HOME</span> <span className="text-wave drop-shadow-2xl">SHARK</span>
           </h1>
           <p className="text-xl md:text-2xl mb-4 font-semibold drop-shadow-lg bg-shark/20 backdrop-blur-sm rounded-lg py-3 px-6 border border-white/10">
             Market Leader in Construction & Home Solutions
