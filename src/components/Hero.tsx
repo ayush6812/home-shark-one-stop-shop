@@ -10,19 +10,19 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        <div className="absolute inset-0 bg-shark/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-shark/90 via-shark/60 to-shark/90"></div>
       </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            HOME <span className="text-wave">SHARK</span>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
+            HOME <span className="text-wave drop-shadow-2xl">SHARK</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-4 font-medium">
+          <p className="text-xl md:text-2xl mb-4 font-semibold drop-shadow-lg bg-shark/20 backdrop-blur-sm rounded-lg py-3 px-6 border border-white/10">
             Market Leader in Construction & Home Solutions
           </p>
-          <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl mb-8 opacity-95 max-w-2xl mx-auto drop-shadow-lg leading-relaxed">
             Your one-stop destination for hardware, electricals, sanitary, and tiles. 
             Over 40,000 items with unmatched customer service and lightning-fast invoicing.
           </p>
