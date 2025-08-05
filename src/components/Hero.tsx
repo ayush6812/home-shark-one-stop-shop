@@ -16,9 +16,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
-            <span className="text-shark">HOME</span> <span className="text-wave drop-shadow-2xl">SHARK</span>
-          </h1>
+          <div className="mb-6 flex justify-center">
+            <img 
+              src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
+              alt="Home Shark Logo" 
+              className="h-20 md:h-28 w-auto drop-shadow-2xl"
+            />
+          </div>
           <p className="text-xl md:text-2xl mb-4 font-semibold drop-shadow-lg bg-shark/20 backdrop-blur-sm rounded-lg py-3 px-6 border border-white/10">
             Market Leader in Construction & Home Solutions
           </p>
