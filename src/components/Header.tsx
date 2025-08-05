@@ -8,9 +8,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-shark">
-              HOME <span className="text-foreground">SHARK</span>
-            </h1>
+            <img 
+              src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
+              alt="Home Shark Logo" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Navigation */}
