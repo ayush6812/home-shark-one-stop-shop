@@ -9,32 +9,46 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 205 85% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 205 85% 35%;
+    --primary-dark: 205 85% 15%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 15% 96%;
+    --secondary-foreground: 210 20% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 15% 96%;
+    --muted-foreground: 210 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 205 85% 25%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 90%;
+    --input: 210 20% 94%;
+    --ring: 205 85% 25%;
+
+    --shark-blue: 205 85% 25%;
+    --shark-blue-light: 205 85% 35%;
+    --shark-blue-dark: 205 85% 15%;
+    --ocean-blue: 205 75% 45%;
+    --wave-blue: 205 65% 85%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(var(--shark-blue)), hsl(var(--shark-blue-light)));
+    --gradient-section: linear-gradient(180deg, hsl(var(--wave-blue)), hsl(var(--background)));
+    
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--shark-blue) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--shark-blue) / 0.15);
 
     --radius: 0.5rem;
 

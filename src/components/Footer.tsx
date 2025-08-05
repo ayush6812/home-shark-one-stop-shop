@@ -1,0 +1,75 @@
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-shark text-white py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-2xl font-bold mb-4">HOME SHARK</h3>
+            <p className="text-white/80 mb-6">
+              Market leader in construction supplies with over 40,000 items. 
+              Your one-stop solution for all home construction needs.
+            </p>
+            <div className="flex space-x-4">
+              <Facebook className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
+              <Twitter className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
+              <Instagram className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
+              <Linkedin className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-white/80">
+              <li><a href="#" className="hover:text-wave transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-wave transition-colors">Our Products</a></li>
+              <li><a href="#" className="hover:text-wave transition-colors">Services</a></li>
+              <li><a href="#" className="hover:text-wave transition-colors">Career</a></li>
+              <li><a href="#" className="hover:text-wave transition-colors">Blog</a></li>
+            </ul>
+          </div>
+
+          {/* Product Categories */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Product Categories</h4>
+            <ul className="space-y-2 text-white/80">
+              <li><a href="#" className="hover:text-wave transition-colors">Hardware</a></li>
+              <li><a href="#" className="hover:text-wave transition-colors">Electricals</a></li>
+              <li><a href="#" className="hover:text-wave transition-colors">Sanitary</a></li>
+              <li><a href="#" className="hover:text-wave transition-colors">Tiles</a></li>
+              <li><a href="#" className="hover:text-wave transition-colors">Complete Catalog</a></li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+            <div className="space-y-3 text-white/80">
+              <div className="flex items-center gap-3">
+                <MapPin className="h-5 w-5 text-wave" />
+                <span>Your Address Here<br />City, State - PIN</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="h-5 w-5 text-wave" />
+                <span>+91 XXXXX XXXXX</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="h-5 w-5 text-wave" />
+                <span>info@homeshark.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
+          <p>&copy; 2024 Home Shark. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
