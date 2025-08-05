@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/hero-background-new.jpg";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-shark/90 via-shark/60 to-shark/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
       </div>
       
       {/* Content */}
@@ -23,7 +23,7 @@ const Hero = () => {
               className="h-20 md:h-28 w-auto drop-shadow-2xl"
             />
           </div>
-          <p className="text-xl md:text-2xl mb-4 font-semibold drop-shadow-lg bg-shark/20 backdrop-blur-sm rounded-lg py-3 px-6 border border-white/10">
+          <p className="text-xl md:text-2xl mb-4 font-semibold text-white bg-gradient-to-r from-shark/80 to-ocean/80 backdrop-blur-sm rounded-2xl py-4 px-8 border border-white/20 shadow-glow">
             Market Leader in Construction & Home Solutions
           </p>
           <p className="text-lg md:text-xl mb-8 opacity-95 max-w-2xl mx-auto drop-shadow-lg leading-relaxed">

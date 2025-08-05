@@ -27,7 +27,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-wave/30">
+    <section className="py-20 bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4">
         {/* Why Home Shark Section */}
         <div className="text-center mb-16">
@@ -43,7 +43,7 @@ const AboutSection = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
-            <div key={index} className="text-center p-6 rounded-lg bg-card shadow-card hover:shadow-elegant transition-all duration-300">
+            <div key={index} className="text-center p-8 rounded-xl bg-gradient-card shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-shark/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <feature.icon className="h-8 w-8 text-shark" />
               </div>

@@ -50,7 +50,7 @@ const ProductCategories = () => {
           {categories.map((category, index) => (
             <div 
               key={index} 
-              className="group relative overflow-hidden rounded-lg bg-card shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105"
+              className="group relative overflow-hidden rounded-xl bg-gradient-card shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105 transform"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
               <div className="relative p-8 text-center">
@@ -69,7 +69,7 @@ const ProductCategories = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="bg-gradient-to-r from-wave to-wave/50 rounded-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-shark/10 to-ocean/10 rounded-xl p-8 max-w-4xl mx-auto border border-shark/20">
             <h3 className="text-2xl font-bold mb-4 text-shark">40,000+ Items Available</h3>
             <p className="text-muted-foreground mb-6">
               From the smallest nail to complete turnkey solutions, we have everything 

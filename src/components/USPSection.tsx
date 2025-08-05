@@ -29,7 +29,7 @@ const USPSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-wave/20 to-background">
+    <section className="py-20 bg-gradient-to-b from-secondary/20 to-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -45,7 +45,7 @@ const USPSection = () => {
           {usps.map((usp, index) => (
             <div 
               key={index} 
-              className="flex gap-6 p-8 rounded-lg bg-card shadow-card hover:shadow-elegant transition-all duration-300"
+              className="flex gap-6 p-8 rounded-xl bg-gradient-card shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-shark/10 rounded-full flex items-center justify-center">
