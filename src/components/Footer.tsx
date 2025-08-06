@@ -24,11 +24,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#" className="hover:text-wave transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-wave transition-colors">Our Products</a></li>
-              <li><a href="#" className="hover:text-wave transition-colors">Services</a></li>
-              <li><a href="#" className="hover:text-wave transition-colors">Career</a></li>
-              <li><a href="#" className="hover:text-wave transition-colors">Blog</a></li>
+              <li><a href="/about" className="hover:text-wave transition-colors">About Us</a></li>
+              <li><a href="/products" className="hover:text-wave transition-colors">Our Products</a></li>
+              <li><a href="/services" className="hover:text-wave transition-colors">Services</a></li>
+              <li><a href="/career" className="hover:text-wave transition-colors">Career</a></li>
+              <li><a href="/blog" className="hover:text-wave transition-colors">Blog</a></li>
             </ul>
           </div>
 
@@ -36,11 +36,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Product Categories</h4>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#" className="hover:text-wave transition-colors">Hardware</a></li>
-              <li><a href="#" className="hover:text-wave transition-colors">Electricals</a></li>
-              <li><a href="#" className="hover:text-wave transition-colors">Sanitary</a></li>
-              <li><a href="#" className="hover:text-wave transition-colors">Tiles</a></li>
-              <li><a href="#" className="hover:text-wave transition-colors">Complete Catalog</a></li>
+              <li><a href="/hardware" className="hover:text-wave transition-colors">Hardware</a></li>
+              <li><a href="/electricals" className="hover:text-wave transition-colors">Electricals</a></li>
+              <li><a href="/sanitary" className="hover:text-wave transition-colors">Sanitary</a></li>
+              <li><a href="/tiles" className="hover:text-wave transition-colors">Tiles</a></li>
+              <li><a href="/products" className="hover:text-wave transition-colors">Complete Catalog</a></li>
             </ul>
           </div>
 

@@ -1,35 +1,43 @@
-import { Wrench, Zap, Droplets, Grid3X3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import hardwareImage from "@/assets/hardware-category.jpg";
+import electricalsImage from "@/assets/electricals-category.jpg";
+import sanitaryImage from "@/assets/sanitary-category.jpg";
+import tilesImage from "@/assets/tiles-category.jpg";
 
 const ProductCategories = () => {
   const categories = [
     {
-      icon: Wrench,
+      image: hardwareImage,
       title: "Hardware",
       description: "Complete range of tools, fasteners, and construction hardware",
       items: "10,000+ Items",
-      color: "from-shark to-shark-light"
+      color: "from-shark to-shark-light",
+      link: "/hardware"
     },
     {
-      icon: Zap,
+      image: electricalsImage,
       title: "Electricals",
       description: "Wiring, switches, fixtures, and electrical components",
       items: "12,000+ Items", 
-      color: "from-orange-500 to-orange-600"
+      color: "from-orange-500 to-orange-600",
+      link: "/electricals"
     },
     {
-      icon: Droplets,
+      image: sanitaryImage,
       title: "Sanitary",
       description: "Pipes, fittings, fixtures, and plumbing solutions",
       items: "8,000+ Items",
-      color: "from-blue-500 to-blue-600"
+      color: "from-blue-500 to-blue-600",
+      link: "/sanitary"
     },
     {
-      icon: Grid3X3,
+      image: tilesImage,
       title: "Tiles",
       description: "Floor tiles, wall tiles, and ceramic solutions",
       items: "10,000+ Items",
-      color: "from-green-500 to-green-600"
+      color: "from-green-500 to-green-600",
+      link: "/tiles"
     }
   ];
 
@@ -48,15 +56,20 @@ const ProductCategories = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category, index) => (
-            <div 
+            <Link 
               key={index} 
-              className="group relative overflow-hidden rounded-xl bg-gradient-card shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105 transform"
+              to={category.link}
+              className="group relative overflow-hidden rounded-xl bg-gradient-card shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105 transform block"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
-              <div className="relative p-8 text-center">
-                <div className={`w-16 h-16 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                  <category.icon className="h-8 w-8 text-white" />
-                </div>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={category.image} 
+                  alt={category.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
+              </div>
+              <div className="relative p-6 text-center">
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">{category.title}</h3>
                 <p className="text-muted-foreground mb-4">{category.description}</p>
                 <p className="text-shark font-semibold text-lg mb-6">{category.items}</p>
@@ -64,7 +77,7 @@ const ProductCategories = () => {
                   View Products
                 </Button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -76,9 +89,11 @@ const ProductCategories = () => {
               you need under one roof. Our extensive inventory ensures you never have to 
               look elsewhere for your construction needs.
             </p>
-            <Button variant="hero" size="lg">
-              Browse Complete Catalog
-            </Button>
+            <Link to="/products">
+              <Button variant="hero" size="lg">
+                Browse Complete Catalog
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

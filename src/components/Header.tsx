@@ -17,11 +17,11 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-shark transition-colors">Home</a>
-            <a href="#about" className="text-foreground hover:text-shark transition-colors">About</a>
-            <a href="#products" className="text-foreground hover:text-shark transition-colors">Products</a>
-            <a href="#services" className="text-foreground hover:text-shark transition-colors">Services</a>
-            <a href="#contact" className="text-foreground hover:text-shark transition-colors">Contact</a>
+            <a href="/" className="text-foreground hover:text-shark transition-colors">Home</a>
+            <a href="/about" className="text-foreground hover:text-shark transition-colors">About</a>
+            <a href="/products" className="text-foreground hover:text-shark transition-colors">Products</a>
+            <a href="/services" className="text-foreground hover:text-shark transition-colors">Services</a>
+            <a href="/blog" className="text-foreground hover:text-shark transition-colors">Blog</a>
           </nav>
 
           {/* CTA Buttons */}
