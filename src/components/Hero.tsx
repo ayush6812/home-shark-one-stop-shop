@@ -5,12 +5,13 @@ import heroBackground from "@/assets/hero-background-new.jpg";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image with Enhanced Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/90"></div>
+        <div className="absolute inset-0 backdrop-blur-[1px]"></div>
       </div>
       
       {/* Content */}
@@ -26,7 +27,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl mb-4 font-semibold text-white bg-gradient-to-r from-shark/80 to-ocean/80 backdrop-blur-sm rounded-2xl py-4 px-8 border border-white/20 shadow-glow">
             Market Leader in Construction & Home Solutions
           </p>
-          <p className="text-lg md:text-xl mb-8 opacity-95 max-w-2xl mx-auto drop-shadow-lg leading-relaxed">
+          <p className="text-lg md:text-xl mb-8 text-white/95 max-w-2xl mx-auto leading-relaxed font-medium" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.6)'}}>
             Your one-stop destination for hardware, electricals, sanitary, and tiles. 
             Over 40,000 items with unmatched customer service and lightning-fast invoicing.
           </p>
