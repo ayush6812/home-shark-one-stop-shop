@@ -50,15 +50,15 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-wave" />
-                <span>Your Address Here<br />City, State - PIN</span>
+                <span>A-26, Block A, Indira Colony<br />Kirti Nagar, New Delhi, 110015</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-wave" />
-                <span>+91 XXXXX XXXXX</span>
+                <span>01147400000</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-wave" />
-                <span>info@homeshark.com</span>
+                <span>https://homeshark.in/</span>
               </div>
             </div>
           </div>

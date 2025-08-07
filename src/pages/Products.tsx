@@ -6,97 +6,114 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const Products = () => {
+  const categories = [
+    {
+      title: "Hardware",
+      description: "Complete range of construction hardware including tools, fasteners, and building materials.",
+      items: ["Hand Tools", "Power Tools", "Fasteners", "Building Hardware", "Safety Equipment"],
+      link: "/hardware"
+    },
+    {
+      title: "Electricals",
+      description: "Comprehensive electrical solutions for residential and commercial projects.",
+      items: ["Wires & Cables", "Switches & Sockets", "LED Lighting", "Electrical Panels", "Safety Devices"],
+      link: "/electricals"
+    },
+    {
+      title: "Sanitary",
+      description: "Premium sanitary and plumbing solutions for modern bathrooms and kitchens.",
+      items: ["Sanitaryware", "Faucets & Taps", "Pipes & Fittings", "Bathroom Accessories", "Water Heaters"],
+      link: "/sanitary"
+    },
+    {
+      title: "Tiles",
+      description: "Stunning tile collections for floors, walls, and decorative applications.",
+      items: ["Floor Tiles", "Wall Tiles", "Designer Tiles", "Outdoor Tiles", "Tile Adhesives"],
+      link: "/tiles"
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-background via-background to-accent/5">
+      <section className="bg-gradient-to-br from-shark/5 to-ocean/5 py-20 pt-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-shark to-wave">Products</span>
+          <div className="text-center mb-16">
+            <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-shark to-ocean bg-clip-text text-transparent">
+              Our Products
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Discover our comprehensive range of 40,000+ construction supplies across four major categories.
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Discover our comprehensive range of 40,000+ products across all major construction and home solution categories.
             </p>
-            
-            {/* Search Bar */}
-            <div className="max-w-2xl mx-auto relative">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground h-5 w-5" />
-              <Input 
-                placeholder="Search for products..." 
-                className="pl-12 pr-20 h-14 text-lg bg-background/80 backdrop-blur-sm border-border/50"
-              />
-              <Button variant="hero" size="sm" className="absolute right-2 top-2">
-                <Filter className="h-4 w-4 mr-2" />
-                Filter
-              </Button>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Product Categories */}
-      <ProductCategories />
-
-      {/* Featured Products */}
-      <section className="py-16 bg-accent/5">
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 text-foreground">Featured Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Premium Steel Bolts Set",
-                category: "Hardware",
-                price: "₹299",
-                image: "/placeholder.svg"
-              },
-              {
-                name: "LED Panel Lights",
-                category: "Electricals", 
-                price: "₹1,299",
-                image: "/placeholder.svg"
-              },
-              {
-                name: "Chrome Faucet Set",
-                category: "Sanitary",
-                price: "₹2,499",
-                image: "/placeholder.svg"
-              },
-              {
-                name: "Ceramic Floor Tiles",
-                category: "Tiles",
-                price: "₹89/sq.ft",
-                image: "/placeholder.svg"
-              },
-              {
-                name: "Power Drill Kit",
-                category: "Hardware",
-                price: "₹3,999",
-                image: "/placeholder.svg"
-              },
-              {
-                name: "Smart Switch Panel",
-                category: "Electricals",
-                price: "₹899",
-                image: "/placeholder.svg"
-              }
-            ].map((product, index) => (
-              <div key={index} className="bg-gradient-card rounded-xl overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105">
-                <div className="h-48 bg-muted flex items-center justify-center">
-                  <span className="text-muted-foreground">Product Image</span>
-                </div>
-                <div className="p-6">
-                  <div className="text-sm text-shark font-medium mb-2">{product.category}</div>
-                  <h3 className="text-xl font-semibold mb-3 text-foreground">{product.name}</h3>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-shark">{product.price}</span>
-                    <Button variant="outline" size="sm">Add to Cart</Button>
-                  </div>
-                </div>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {categories.map((category, index) => (
+              <div key={index} className="group bg-background/60 backdrop-blur-sm rounded-2xl p-8 border border-border/50 hover:border-shark/30 transition-all duration-300 hover:shadow-glow">
+                <h3 className="text-2xl font-bold mb-4 text-shark group-hover:text-ocean transition-colors">
+                  {category.title}
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {category.description}
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {category.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-shark rounded-full"></div>
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a 
+                  href={category.link}
+                  className="inline-block bg-gradient-to-r from-shark to-ocean text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium hover:scale-105 duration-300"
+                >
+                  Explore {category.title}
+                </a>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="bg-gradient-to-br from-shark/5 to-ocean/5 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-shark">Why Choose Our Products?</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              We source only the finest quality products from trusted manufacturers worldwide.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-6 hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-shark to-ocean rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl text-white font-bold">40K+</span>
+              </div>
+              <h3 className="font-semibold mb-2 text-shark">Extensive Range</h3>
+              <p className="text-muted-foreground text-sm">Over 40,000 products across all categories</p>
+            </div>
+            <div className="text-center p-6 hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-shark to-ocean rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl text-white font-bold">✓</span>
+              </div>
+              <h3 className="font-semibold mb-2 text-shark">Quality Assured</h3>
+              <p className="text-muted-foreground text-sm">All products undergo strict quality checks</p>
+            </div>
+            <div className="text-center p-6 hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-shark to-ocean rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl text-white font-bold">⚡</span>
+              </div>
+              <h3 className="font-semibold mb-2 text-shark">Fast Delivery</h3>
+              <p className="text-muted-foreground text-sm">Quick processing and reliable delivery</p>
+            </div>
           </div>
         </div>
       </section>

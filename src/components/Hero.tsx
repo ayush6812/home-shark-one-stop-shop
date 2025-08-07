@@ -10,7 +10,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
       </div>
       
       {/* Content */}
@@ -44,15 +44,15 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center text-white/90">
             <div className="flex items-center gap-2">
               <Phone className="h-5 w-5" />
-              <span>+91 XXXXX XXXXX</span>
+              <span>01147400000</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-5 w-5" />
-              <span>info@homeshark.com</span>
+              <span>https://homeshark.in/</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" />
-              <span>Your Location</span>
+              <span>A-26, Block A, Indira Colony, Kirti Nagar, New Delhi, 110015</span>
             </div>
           </div>
         </div>

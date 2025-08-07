@@ -6,134 +6,111 @@ import { Button } from "@/components/ui/button";
 const Blog = () => {
   const blogPosts = [
     {
-      title: "Top 10 Essential Tools for Home Construction",
-      excerpt: "Discover the must-have tools that every homeowner and contractor should have in their toolkit for successful construction projects.",
-      author: "John Smith",
+      title: "Essential Tools Every Contractor Should Have in 2024",
+      excerpt: "Discover the must-have tools that can boost productivity and efficiency on your construction projects.",
       date: "March 15, 2024",
-      category: "Tools & Equipment",
-      image: "/placeholder.svg"
+      category: "Hardware",
+      readTime: "5 min read"
     },
     {
-      title: "Electrical Safety Tips for DIY Projects",
-      excerpt: "Learn essential electrical safety practices to keep yourself and your property safe during electrical installations and repairs.",
-      author: "Sarah Johnson",
-      date: "March 12, 2024", 
-      category: "Electrical",
-      image: "/placeholder.svg"
-    },
-    {
-      title: "Choosing the Right Tiles for Your Space",
-      excerpt: "A comprehensive guide to selecting the perfect tiles for different areas of your home, from bathrooms to living rooms.",
-      author: "Mike Davis",
+      title: "Smart Home Electrical Solutions: Future-Proofing Your Property",
+      excerpt: "Learn about the latest electrical innovations that are transforming modern homes and buildings.",
       date: "March 10, 2024",
-      category: "Tiles & Flooring",
-      image: "/placeholder.svg"
+      category: "Electricals",
+      readTime: "7 min read"
     },
     {
-      title: "Plumbing Maintenance: Prevent Costly Repairs",
-      excerpt: "Simple maintenance tips that can help you avoid expensive plumbing repairs and keep your water systems running smoothly.",
-      author: "Lisa Wilson",
-      date: "March 8, 2024",
-      category: "Plumbing",
-      image: "/placeholder.svg"
-    },
-    {
-      title: "Sustainable Building Materials: The Future",
-      excerpt: "Explore eco-friendly construction materials that are not only good for the environment but also cost-effective.",
-      author: "Robert Chen",
+      title: "Sustainable Building Materials: A Complete Guide",
+      excerpt: "Explore eco-friendly construction materials that reduce environmental impact without compromising quality.",
       date: "March 5, 2024",
-      category: "Sustainability",
-      image: "/placeholder.svg"
+      category: "General",
+      readTime: "8 min read"
     },
     {
-      title: "Hardware Organization: Maximize Efficiency",
-      excerpt: "Tips and tricks for organizing your hardware inventory and tools to improve productivity on construction sites.",
-      author: "Emma Thompson",
-      date: "March 3, 2024",
-      category: "Organization",
-      image: "/placeholder.svg"
+      title: "Modern Bathroom Design Trends with Premium Sanitary Solutions",
+      excerpt: "Transform your bathroom space with the latest design trends and high-quality sanitary fixtures.",
+      date: "February 28, 2024",
+      category: "Sanitary",
+      readTime: "6 min read"
+    },
+    {
+      title: "Tile Installation Best Practices for Long-Lasting Results",
+      excerpt: "Professional tips and techniques for perfect tile installation that stands the test of time.",
+      date: "February 20, 2024",
+      category: "Tiles",
+      readTime: "10 min read"
+    },
+    {
+      title: "Cost-Effective Construction: Maximizing Value Without Compromising Quality",
+      excerpt: "Strategic approaches to reduce construction costs while maintaining high standards and quality.",
+      date: "February 15, 2024",
+      category: "General",
+      readTime: "12 min read"
     }
   ];
+
+  const categories = ["All", "Hardware", "Electricals", "Sanitary", "Tiles", "General"];
 
   return (
     <div className="min-h-screen">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-background via-background to-accent/5">
+      <section className="bg-gradient-to-br from-shark/5 to-ocean/5 py-20 pt-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-              Home Shark <span className="text-transparent bg-clip-text bg-gradient-to-r from-shark to-wave">Blog</span>
+          <div className="text-center mb-16">
+            <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-shark to-ocean bg-clip-text text-transparent">
+              Blog & Industry Insights
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Expert insights, tips, and guides for all your construction and home improvement needs.
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Stay informed with expert advice, industry trends, and practical tips for your construction and home improvement projects.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Featured Post */}
-      <section className="py-16 bg-background">
+      {/* Category Filter */}
+      <section className="py-8 border-b border-border/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-card rounded-xl overflow-hidden shadow-elegant">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="h-64 lg:h-full bg-muted flex items-center justify-center">
-                  <span className="text-muted-foreground">Featured Image</span>
-                </div>
-                <div className="p-8 lg:p-12">
-                  <div className="text-sm text-shark font-medium mb-3">Featured Post</div>
-                  <h2 className="text-3xl font-bold mb-4 text-foreground">{blogPosts[0].title}</h2>
-                  <p className="text-muted-foreground mb-6">{blogPosts[0].excerpt}</p>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
-                    <span className="flex items-center gap-1">
-                      <User className="h-4 w-4" />
-                      {blogPosts[0].author}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      {blogPosts[0].date}
-                    </span>
-                  </div>
-                  <Button variant="hero">
-                    Read More
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Button>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {categories.map((category, index) => (
+              <button
+                key={index}
+                className="px-6 py-2 rounded-full border border-border/50 text-muted-foreground hover:border-shark hover:text-shark transition-all duration-300 hover:scale-105"
+              >
+                {category}
+              </button>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Blog Grid */}
-      <section className="py-16 bg-accent/5">
+      {/* Blog Posts */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 text-foreground">Latest Articles</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.slice(1).map((post, index) => (
-              <article key={index} className="bg-gradient-card rounded-xl overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105">
-                <div className="h-48 bg-muted flex items-center justify-center">
-                  <span className="text-muted-foreground">Article Image</span>
-                </div>
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+            {blogPosts.map((post, index) => (
+              <article key={index} className="group bg-background/60 backdrop-blur-sm rounded-2xl overflow-hidden border border-border/50 hover:border-shark/30 transition-all duration-300 hover:shadow-glow hover:scale-105">
+                <div className="h-48 bg-gradient-to-br from-shark/10 to-ocean/10"></div>
                 <div className="p-6">
-                  <div className="text-sm text-shark font-medium mb-3">{post.category}</div>
-                  <h3 className="text-xl font-semibold mb-3 text-foreground line-clamp-2">{post.title}</h3>
-                  <p className="text-muted-foreground mb-4 line-clamp-3">{post.excerpt}</p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
-                    <span className="flex items-center gap-1">
-                      <User className="h-4 w-4" />
-                      {post.author}
+                  <div className="flex items-center gap-4 mb-3">
+                    <span className="bg-gradient-to-r from-shark to-ocean text-white px-3 py-1 rounded-full text-xs font-medium">
+                      {post.category}
                     </span>
-                    <span className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      {post.date}
-                    </span>
+                    <span className="text-muted-foreground text-sm">{post.readTime}</span>
                   </div>
-                  <Button variant="outline" className="w-full">
-                    Read Article
-                  </Button>
+                  <h3 className="text-xl font-bold mb-3 text-shark group-hover:text-ocean transition-colors leading-tight">
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground text-sm">{post.date}</span>
+                    <button className="text-shark hover:text-ocean transition-colors font-medium">
+                      Read More →
+                    </button>
+                  </div>
                 </div>
               </article>
             ))}
@@ -141,17 +118,24 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Newsletter CTA */}
-      <section className="py-16 bg-background">
+      {/* Newsletter */}
+      <section className="bg-gradient-to-br from-shark/5 to-ocean/5 py-16">
         <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-shark/10 to-ocean/10 rounded-xl p-12 text-center border border-shark/20">
-            <h2 className="text-4xl font-bold mb-6 text-foreground">Stay Updated</h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Subscribe to our newsletter to get the latest construction tips, product updates, and industry insights delivered to your inbox.
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-shark">Stay Updated</h2>
+            <p className="text-muted-foreground mb-8">
+              Subscribe to our newsletter for the latest industry insights, product updates, and expert tips delivered to your inbox.
             </p>
-            <Button variant="hero" size="lg">
-              Subscribe to Newsletter
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 px-4 py-3 rounded-lg border border-border/50 bg-background/60 backdrop-blur-sm focus:outline-none focus:border-shark transition-colors"
+              />
+              <button className="bg-gradient-to-r from-shark to-ocean text-white px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 font-medium">
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </section>

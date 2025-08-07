@@ -17,18 +17,18 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-foreground hover:text-shark transition-colors">Home</a>
-            <a href="/about" className="text-foreground hover:text-shark transition-colors">About</a>
-            <a href="/products" className="text-foreground hover:text-shark transition-colors">Products</a>
-            <a href="/services" className="text-foreground hover:text-shark transition-colors">Services</a>
-            <a href="/blog" className="text-foreground hover:text-shark transition-colors">Blog</a>
+            <a href="/" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">Home</a>
+            <a href="/about" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">About</a>
+            <a href="/products" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">Products</a>
+            <a href="/services" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">Services</a>
+            <a href="/blog" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">Blog</a>
           </nav>
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
             <div className="hidden sm:flex items-center gap-2 text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span className="text-sm">+91 XXXXX XXXXX</span>
+              <span className="text-sm">01147400000</span>
             </div>
             <Button variant="hero" size="sm" className="hidden sm:block">
               Get Quote
