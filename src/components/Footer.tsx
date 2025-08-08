@@ -7,7 +7,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">HOME SHARK</h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
+                alt="Home Shark Logo" 
+                className="h-16 w-auto"
+              />
+            </div>
             <p className="text-white/80 mb-6">
               Market leader in construction supplies with over 40,000 items. 
               Your one-stop solution for all home construction needs.
