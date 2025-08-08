@@ -8,11 +8,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
-              alt="Home Shark Logo" 
-              className="h-10 w-auto"
-            />
+            <a href="/" className="block">
+              <img 
+                src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
+                alt="Home Shark Logo" 
+                className="h-10 w-auto hover:scale-105 transition-transform duration-300"
+              />
+            </a>
           </div>
 
           {/* Navigation */}
@@ -21,14 +23,14 @@ const Header = () => {
             <a href="/about" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">About</a>
             <a href="/products" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">Products</a>
             <a href="/services" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">Services</a>
-            <a href="/blog" className="text-foreground hover:text-shark transition-all duration-300 hover:scale-105 hover:font-semibold">Blog</a>
+            
           </nav>
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
             <div className="hidden sm:flex items-center gap-2 text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span className="text-sm">01147400000</span>
+              <a href="tel:01147400000" className="text-sm hover:text-shark transition-colors">01147400000</a>
             </div>
             <Button variant="hero" size="sm" className="hidden sm:block">
               Get Quote

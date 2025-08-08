@@ -8,11 +8,13 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <img 
-                src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
-                alt="Home Shark Logo" 
-                className="h-16 w-auto"
-              />
+              <a href="/" className="block">
+                <img 
+                  src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
+                  alt="Home Shark Logo" 
+                  className="h-16 w-auto brightness-0 invert hover:brightness-75 transition-all duration-300"
+                />
+              </a>
             </div>
             <p className="text-white/80 mb-6">
               Market leader in construction supplies with over 40,000 items. 
@@ -34,7 +36,7 @@ const Footer = () => {
               <li><a href="/products" className="hover:text-wave transition-colors">Our Products</a></li>
               <li><a href="/services" className="hover:text-wave transition-colors">Services</a></li>
               <li><a href="/career" className="hover:text-wave transition-colors">Career</a></li>
-              <li><a href="/blog" className="hover:text-wave transition-colors">Blog</a></li>
+              
             </ul>
           </div>
 
@@ -56,15 +58,15 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-wave" />
-                <span>A-26, Block A, Indira Colony<br />Kirti Nagar, New Delhi, 110015</span>
+                <span>Tagore Market, A-26, Block A,<br />Kirti Nagar, New Delhi, Delhi, 110015</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-wave" />
-                <span>01147400000</span>
+                <a href="tel:01147400000" className="hover:text-white transition-colors">01147400000</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-wave" />
-                <span>https://homeshark.in/</span>
+                <a href="mailto:info@homeshark.in" className="hover:text-white transition-colors">info@homeshark.in</a>
               </div>
             </div>
           </div>
