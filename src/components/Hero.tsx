@@ -10,7 +10,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40"></div>
       </div>
       
       {/* Content */}
@@ -23,7 +23,7 @@ const Hero = () => {
               className="h-20 md:h-28 w-auto drop-shadow-2xl"
             />
           </div>
-          <p className="text-xl md:text-2xl mb-4 font-semibold text-white bg-gradient-to-r from-shark/80 to-ocean/80 backdrop-blur-sm rounded-2xl py-4 px-8 border border-white/20 shadow-glow">
+          <p className="text-xl md:text-2xl mb-4 font-bold text-white bg-gradient-to-r from-shark/90 to-ocean/90 backdrop-blur-md rounded-2xl py-4 px-8 border border-white/30 shadow-glow">
             Market Leader in Construction & Home Solutions
           </p>
           <p className="text-lg md:text-xl mb-8 opacity-95 max-w-2xl mx-auto drop-shadow-lg leading-relaxed">
@@ -52,7 +52,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" />
-              <span>A-26, Block A, Indira Colony, Kirti Nagar, New Delhi, 110015</span>
+              <span>Tagore Market, A-26, Block A, Indira Colony, Kirti Nagar, New Delhi, Delhi, 110015</span>
             </div>
           </div>
         </div>

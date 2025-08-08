@@ -56,7 +56,7 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-wave" />
-                <span>A-26, Block A, Indira Colony<br />Kirti Nagar, New Delhi, 110015</span>
+                <span>Tagore Market, A-26, Block A<br />Indira Colony, Kirti Nagar<br />New Delhi, Delhi, 110015</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-wave" />
