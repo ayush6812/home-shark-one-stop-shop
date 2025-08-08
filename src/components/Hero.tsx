@@ -1,32 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin } from "lucide-react";
-import heroBackground from "@/assets/hero-background-new.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50">
+      {/* Decorative Elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-shark/5 via-transparent to-ocean/10"></div>
+      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-shark/10 to-ocean/10 rounded-full blur-xl"></div>
+      <div className="absolute bottom-32 right-20 w-48 h-48 bg-gradient-to-br from-ocean/10 to-wave/10 rounded-full blur-xl"></div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-6 flex justify-center">
+          <div className="mb-8 flex justify-center">
             <img 
               src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
               alt="Home Shark Logo" 
-              className="h-20 md:h-28 w-auto drop-shadow-2xl"
+              className="h-28 md:h-36 w-auto drop-shadow-xl hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <p className="text-xl md:text-2xl mb-4 font-semibold text-white bg-gradient-to-r from-shark/80 to-ocean/80 backdrop-blur-sm rounded-2xl py-4 px-8 border border-white/20 shadow-glow">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl mb-6 font-bold text-shark bg-gradient-to-r from-shark to-ocean bg-clip-text text-transparent leading-tight">
             Market Leader in Construction & Home Solutions
-          </p>
-          <p className="text-lg md:text-xl mb-8 opacity-95 max-w-2xl mx-auto drop-shadow-lg leading-relaxed">
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
             Your one-stop destination for hardware, electricals, sanitary, and tiles. 
             Over 40,000 items with unmatched customer service and lightning-fast invoicing.
           </p>
@@ -41,18 +37,18 @@ const Hero = () => {
           </div>
           
           {/* Contact Info */}
-          <div className="flex flex-col md:flex-row gap-6 justify-center text-white/90">
-            <div className="flex items-center gap-2">
-              <Phone className="h-5 w-5" />
-              <span>01147400000</span>
+          <div className="flex flex-col md:flex-row gap-6 justify-center text-slate-600">
+            <div className="flex items-center gap-2 hover:text-shark transition-colors">
+              <Phone className="h-5 w-5 text-shark" />
+              <a href="tel:01147400000" className="font-medium">01147400000</a>
+            </div>
+            <div className="flex items-center gap-2 hover:text-shark transition-colors">
+              <Mail className="h-5 w-5 text-shark" />
+              <a href="mailto:info@homeshark.in" className="font-medium">info@homeshark.in</a>
             </div>
             <div className="flex items-center gap-2">
-              <Mail className="h-5 w-5" />
-              <span>https://homeshark.in/</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="h-5 w-5" />
-              <span>A-26, Block A, Indira Colony, Kirti Nagar, New Delhi, 110015</span>
+              <MapPin className="h-5 w-5 text-shark" />
+              <span className="font-medium">Tagore Market, A-26, Block A, Kirti Nagar, New Delhi, Delhi, 110015</span>
             </div>
           </div>
         </div>
