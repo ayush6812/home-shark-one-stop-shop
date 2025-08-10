@@ -57,22 +57,22 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-3xl font-bold mb-6 text-foreground">
-              Market Leadership Through Excellence
+              Excellence Through Complete Construction Solutions
             </h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                <strong className="text-shark">Home:</strong> Our intent is to cater to all home construction 
-                and renovation needs, be it a nail or turnkey modular kitchen. We understand that every 
-                project, big or small, deserves the same level of attention and quality.
+                <strong className="text-shark">Comprehensive Inventory:</strong> From hardware essentials to premium paints, 
+                electrical components to sanitary fixtures - our 40,000+ item inventory ensures you find everything 
+                needed for your construction and renovation projects under one roof.
               </p>
               <p>
-                <strong className="text-shark">Shark:</strong> We position ourselves as the SHARK - the market 
-                leader that sets industry standards. Our comprehensive approach and unwavering commitment 
-                to customer satisfaction make us the preferred choice for contractors and homeowners alike.
+                <strong className="text-shark">Market Leadership:</strong> As the industry shark, we lead through 
+                innovation and reliability. Our state-of-the-art warehouse facilities and expert team deliver 
+                unmatched service quality that contractors and homeowners depend on.
               </p>
               <p>
-                With over 40,000 items in our inventory and a team dedicated to exceptional service, 
-                we ensure that your projects are completed on time, within budget, and to the highest standards.
+                Whether you're sourcing a single nail or planning a complete turnkey modular kitchen, 
+                our streamlined processes and extensive product range guarantee project success from start to finish.
               </p>
             </div>
             <Button variant="hero" size="lg" className="mt-6">

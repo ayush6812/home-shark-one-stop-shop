@@ -20,14 +20,14 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
               alt="Home Shark Logo" 
-              className="h-28 md:h-36 w-auto drop-shadow-xl hover:scale-105 transition-transform duration-300"
+              className="h-44 md:h-52 w-auto drop-shadow-xl hover:scale-105 transition-transform duration-300"
             />
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl mb-6 font-bold text-shark bg-gradient-to-r from-shark to-ocean bg-clip-text text-transparent leading-tight">
             Market Leader in Construction & Home Solutions
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
-            From a single nail to turnkey modular kitchens - we're your one-stop destination for hardware, electricals, sanitary, and tiles. With 40,000+ items and unmatched customer service, we're the market leader you can trust.
+            From a single nail to turnkey modular kitchens - we're your one-stop destination for hardware, electricals, sanitary, and paints. With 40,000+ items and unmatched customer service, we're the market leader you can trust.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
