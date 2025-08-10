@@ -12,7 +12,7 @@ import Blog from "./pages/Blog";
 import Hardware from "./pages/Hardware";
 import Electricals from "./pages/Electricals";
 import Sanitary from "./pages/Sanitary";
-import Tiles from "./pages/Tiles";
+import Paints from "./pages/Paints";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,7 +33,7 @@ const App = () => (
           <Route path="/hardware" element={<Hardware />} />
           <Route path="/electricals" element={<Electricals />} />
           <Route path="/sanitary" element={<Sanitary />} />
-          <Route path="/tiles" element={<Tiles />} />
+          <Route path="/paints" element={<Paints />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

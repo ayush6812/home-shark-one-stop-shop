@@ -12,7 +12,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/3dfc4cc0-79fc-4351-b0ca-5e94c6d5da26.png" 
                 alt="Home Shark Logo" 
-                className="h-10 w-auto hover:scale-105 transition-transform duration-300"
+                className="h-14 w-auto hover:scale-105 transition-transform duration-300"
               />
             </a>
           </div>

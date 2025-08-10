@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -21,10 +21,15 @@ const Footer = () => {
               Your one-stop solution for all home construction needs.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
-              <Instagram className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
-              <Linkedin className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
+              <a href="https://www.facebook.com/profile.php?id=61578261213478" target="_blank" rel="noopener noreferrer">
+                <Facebook className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <Instagram className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5 hover:text-wave cursor-pointer transition-colors" />
+              </a>
             </div>
           </div>
 
@@ -47,7 +52,7 @@ const Footer = () => {
               <li><a href="/hardware" className="hover:text-wave transition-colors">Hardware</a></li>
               <li><a href="/electricals" className="hover:text-wave transition-colors">Electricals</a></li>
               <li><a href="/sanitary" className="hover:text-wave transition-colors">Sanitary</a></li>
-              <li><a href="/tiles" className="hover:text-wave transition-colors">Tiles</a></li>
+              <li><a href="/paints" className="hover:text-wave transition-colors">Paints</a></li>
               <li><a href="/products" className="hover:text-wave transition-colors">Complete Catalog</a></li>
             </ul>
           </div>
@@ -73,7 +78,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
-          <p>&copy; 2024 Home Shark. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 Corporate Buildcon LLP. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>
