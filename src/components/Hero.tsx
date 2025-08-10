@@ -1,13 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50">
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-shark/5 via-transparent to-ocean/10"></div>
-      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-shark/10 to-ocean/10 rounded-full blur-xl"></div>
-      <div className="absolute bottom-32 right-20 w-48 h-48 bg-gradient-to-br from-ocean/10 to-wave/10 rounded-full blur-xl"></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Light Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        <div className="absolute inset-0 bg-white/85"></div>
+      </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
@@ -23,8 +27,7 @@ const Hero = () => {
             Market Leader in Construction & Home Solutions
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
-            Your one-stop destination for hardware, electricals, sanitary, and tiles. 
-            Over 40,000 items with unmatched customer service and lightning-fast invoicing.
+            From a single nail to turnkey modular kitchens - we're your one-stop destination for hardware, electricals, sanitary, and tiles. With 40,000+ items and unmatched customer service, we're the market leader you can trust.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

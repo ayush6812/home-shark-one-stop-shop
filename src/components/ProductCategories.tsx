@@ -67,7 +67,7 @@ const ProductCategories = () => {
                   alt={category.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-black/20 opacity-20 group-hover:opacity-30 transition-opacity"></div>
               </div>
               <div className="relative p-6 text-center">
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">{category.title}</h3>
