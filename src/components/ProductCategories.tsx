@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import hardwareImage from "@/assets/hardware-category.jpg";
 import electricalsImage from "@/assets/electricals-category.jpg";
 import sanitaryImage from "@/assets/sanitary-category.jpg";
-import paintsImage from "@/assets/paints-category.jpg";
+import tilesImage from "@/assets/tiles-category.jpg";
 
 const ProductCategories = () => {
   const categories = [
@@ -32,11 +32,12 @@ const ProductCategories = () => {
       link: "/sanitary"
     },
     {
-      image: paintsImage,
-      title: "Paints",
-      description: "Premium paints, coatings, and finishing solutions",
+      image: tilesImage,
+      title: "Tiles",
+      description: "Floor tiles, wall tiles, and ceramic solutions",
       items: "10,000+ Items",
-      link: "/paints"
+      color: "from-green-500 to-green-600",
+      link: "/tiles"
     }
   ];
 
