@@ -1,4 +1,5 @@
 import { Headphones, Clock, ShoppingCart, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const USPSection = () => {
   const usps = [
@@ -72,12 +73,16 @@ const USPSection = () => {
             Join thousands of satisfied customers who trust Home Shark for their construction needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-shark font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-              Get Started Today
-            </button>
-            <button className="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-shark transition-colors">
-              Contact Our Team
-            </button>
+            <Link to="/quote">
+              <button className="bg-white text-shark font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                Get Started Today
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-shark transition-colors">
+                Contact Our Team
+              </button>
+            </Link>
           </div>
         </div>
       </div>
