@@ -1,5 +1,6 @@
 import { Building, Users, Zap, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import warehouseImage from "@/assets/warehouse.jpg";
 
 const AboutSection = () => {
@@ -75,9 +76,11 @@ const AboutSection = () => {
                 we ensure that your projects are completed on time, within budget, and to the highest standards.
               </p>
             </div>
-            <Button variant="hero" size="lg" className="mt-6">
-              Learn More About Us
-            </Button>
+            <Link to="/about">
+              <Button variant="hero" size="lg" className="mt-6">
+                Learn More About Us
+              </Button>
+            </Link>
           </div>
           <div className="relative">
             <img 
