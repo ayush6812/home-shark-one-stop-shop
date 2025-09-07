@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
@@ -31,12 +32,16 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="xl">
-              Explore Our Products
-            </Button>
-            <Button variant="cta" size="xl">
-              Get Quick Quote
-            </Button>
+            <Link to="/products">
+              <Button variant="hero" size="xl">
+                Explore Our Products
+              </Button>
+            </Link>
+            <Link to="/quote">
+              <Button variant="cta" size="xl">
+                Get Quick Quote
+              </Button>
+            </Link>
           </div>
           
           {/* Contact Info */}
