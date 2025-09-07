@@ -32,13 +32,13 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link to="/products">
-              <Button variant="hero" size="xl">
+            <Link to="/products" className="inline-block">
+              <Button variant="hero" size="xl" className="w-full sm:w-auto">
                 Explore Our Products
               </Button>
             </Link>
-            <Link to="/quote">
-              <Button variant="cta" size="xl">
+            <Link to="/quote" className="inline-block">
+              <Button variant="cta" size="xl" className="w-full sm:w-auto">
                 Get Quick Quote
               </Button>
             </Link>
@@ -54,9 +54,16 @@ const Hero = () => {
               <Mail className="h-5 w-5 text-shark" />
               <a href="mailto:info@homeshark.in" className="font-medium">info@homeshark.in</a>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 hover:text-shark transition-colors">
               <MapPin className="h-5 w-5 text-shark" />
-              <span className="font-medium">Tagore Market, A-26, Block A, Kirti Nagar, New Delhi, Delhi, 110015</span>
+              <a 
+                href="https://www.google.com/maps?q=Tagore+Market,+A-26,+Block+A,+Kirti+Nagar,+New+Delhi,+Delhi,+110015" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-medium hover:underline cursor-pointer"
+              >
+                Tagore Market, A-26, Block A, Kirti Nagar, New Delhi, Delhi, 110015
+              </a>
             </div>
           </div>
         </div>
