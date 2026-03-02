@@ -139,10 +139,10 @@ const Career = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:01147400000"
+                href="tel:+918766298418"
                 className="bg-gradient-to-r from-shark to-ocean text-white px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 font-medium"
               >
-                Call: 01147400000
+                Call: +91 87662 98418
               </a>
               <a 
                 href="https://homeshark.in/"

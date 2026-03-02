@@ -55,12 +55,12 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				shark: {
-					DEFAULT: 'hsl(var(--shark-blue))',
-					light: 'hsl(var(--shark-blue-light))',
-					dark: 'hsl(var(--shark-blue-dark))'
+					DEFAULT: 'hsl(var(--shark))',
+					light: 'hsl(var(--shark-light))',
+					dark: 'hsl(var(--shark-dark))'
 				},
-				ocean: 'hsl(var(--ocean-blue))',
-				wave: 'hsl(var(--wave-blue))',
+				ocean: 'hsl(var(--ocean))',
+				wave: 'hsl(var(--wave))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
