@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Background Image with Strong Dark Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.9) 100%), url(${heroBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        style={{ backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.95) 100%), url(${heroBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       />
       
       {/* Content */}

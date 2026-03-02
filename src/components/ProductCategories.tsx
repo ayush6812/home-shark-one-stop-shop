@@ -48,11 +48,11 @@ const ProductCategories = () => {
       <div className="container mx-auto px-4">
         <ScrollAnimation>
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-yellow-400 text-black px-4 py-1.5 rounded-full text-sm font-bold mb-4">
+<div className="inline-block bg-yellow-100 text-amber-600 px-4 py-1.5 rounded-full text-sm font-bold mb-4">
               Our Products
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
-              Product Categories
+<h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
+              Product <span className="text-amber-600">Categories</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive inventory across four major categories, ensuring we have 
