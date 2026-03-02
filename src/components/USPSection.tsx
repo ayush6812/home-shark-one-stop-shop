@@ -32,11 +32,11 @@ const USPSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 via-white to-gray-50">
+    <section className="py-8 bg-gradient-to-b from-gray-50 via-white to-gray-50">
       <div className="container mx-auto px-4">
         <ScrollAnimation>
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-yellow-400 text-black px-4 py-1.5 rounded-full text-sm font-bold mb-4">
+<div className="inline-block bg-yellow-100 text-amber-600 px-4 py-1.5 rounded-full text-sm font-bold mb-4">
               Why Choose Us
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">

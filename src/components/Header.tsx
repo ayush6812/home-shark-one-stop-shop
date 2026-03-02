@@ -70,14 +70,14 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* CTA Buttons */}
-            <div className="flex items-center gap-2 md:gap-3">
+{/* CTA Buttons */}
+            <div className="flex items-center justify-center px-3 py-1">
               <Link to="/quote" onClick={closeMenu}>
                 <Button 
                   size="sm" 
-                  className="hidden md:block bg-white text-black font-bold hover:bg-gray-100 shadow-lg transition-all duration-300"
+                  className="hidden md:block bg-white text-black font-bold hover:bg-gray-100 shadow-lg transition-all duration-300 px-4 py-2"
                 >
-                  Get Quote
+                  Get Quick Quote
                 </Button>
               </Link>
               <Button 
