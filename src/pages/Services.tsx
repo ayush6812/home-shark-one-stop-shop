@@ -1,7 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Truck, Calculator, Headphones, Clock, Shield, MapPin } from "lucide-react";
+import { Truck, Calculator, Headphones, Clock, Shield, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -48,75 +50,92 @@ const Services = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-shark/5 to-ocean/5 py-20 pt-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-shark to-ocean bg-clip-text text-transparent">
-              Our Services
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Beyond products, we provide comprehensive services to ensure your construction and home improvement projects succeed.
-            </p>
-          </div>
+      <section className="relative bg-black py-28 pt-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl" />
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <ScrollAnimation>
+            <div className="text-center max-w-4xl mx-auto">
+              <div className="inline-block bg-gradient-to-r from-amber-400 to-yellow-400 text-black px-4 py-1.5 rounded-full text-sm font-bold mb-6">
+                Our Services
+              </div>
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                Comprehensive <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">Services</span> for You
+              </h1>
+              <p className="text-xl text-gray-300 leading-relaxed">
+                Beyond products, we provide comprehensive services to ensure your construction and home improvement projects succeed.
+              </p>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-16">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="group bg-background/60 backdrop-blur-sm rounded-2xl p-8 border border-border/50 hover:border-shark/30 transition-all duration-300 hover:shadow-glow">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-shark to-ocean rounded-full flex items-center justify-center">
-                    <service.icon className="h-8 w-8 text-white" />
+              <ScrollAnimation key={index} animation="fade-up" delay={index * 100}>
+                <div className="group bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-amber-300 hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 hover:-translate-y-2">
+                  <div className="flex items-center gap-6 mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-amber-400 to-yellow-400 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-10 w-10 text-black" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 group-hover:text-amber-600 transition-colors">
+                      {service.title}
+                    </h3>
                   </div>
-                  <h3 className="text-2xl font-bold text-shark group-hover:text-ocean transition-colors">
-                    {service.title}
-                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
+                  <ul className="space-y-3">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center gap-3">
+                        <div className="w-6 h-6 bg-amber-50 rounded-full flex items-center justify-center flex-shrink-0">
+                          <div className="w-1.5 h-1.5 bg-amber-500 rounded-full"></div>
+                        </div>
+                        <span className="text-gray-600">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-gradient-to-r from-shark to-ocean rounded-full"></div>
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-shark/5 to-ocean/5 py-16">
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4 text-shark">Ready to Get Started?</h2>
-            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us today to discuss your project requirements and discover how our services can help you succeed.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="tel:01147400000"
-                className="bg-gradient-to-r from-shark to-ocean text-white px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 font-medium"
-              >
-                Call: 01147400000
-              </a>
-              <a 
-                href="https://homeshark.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-shark text-shark px-8 py-3 rounded-lg hover:bg-shark hover:text-white transition-all duration-300 hover:scale-105 font-medium"
-              >
-                Visit Website
-              </a>
+          <ScrollAnimation>
+            <div className="text-center">
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                Ready to Get <span className="text-amber-500">Started</span>?
+              </h2>
+              <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+                Contact us today to discuss your project requirements and discover how our services can help you succeed.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href="tel:+91 87662 98418"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-yellow-400 text-black px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/30"
+                >
+                  <span>📞</span> Call: +91 87662 98418
+                </a>
+                <Link 
+                  to="/contact"
+                  className="inline-flex items-center gap-2 border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-xl font-bold hover:bg-gray-900 hover:text-white transition-all duration-300 hover:scale-105"
+                >
+                  Contact Us
+                  <span>→</span>
+                </Link>
+              </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
 

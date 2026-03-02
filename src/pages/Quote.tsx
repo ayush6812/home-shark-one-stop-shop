@@ -102,7 +102,7 @@ const Quote = () => {
                       <Phone className="h-6 w-6 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold">Phone</h3>
-                        <p className="text-muted-foreground">01147400000</p>
+                        <p className="text-muted-foreground">+91 87662 98418</p>
                         <p className="text-sm text-muted-foreground">Mon-Sat: 9 AM - 8 PM</p>
                       </div>
                     </div>
@@ -120,10 +120,15 @@ const Quote = () => {
                       <MapPin className="h-6 w-6 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold">Visit Our Store</h3>
-                        <p className="text-muted-foreground">
-                          Tagore Market, A-26, Block A<br />
-                          Kirti Nagar, New Delhi - 110015
-                        </p>
+                        <a 
+                          href="https://maps.app.goo.gl/Kmb9uuyfZbNCSDih8" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-primary hover:underline font-medium"
+                        >
+                          Tagore Market, A-26, Block A, Indira Colony<br />
+                          Kirti Nagar, New Delhi, Delhi - 110015
+                        </a>
                       </div>
                     </div>
                     
